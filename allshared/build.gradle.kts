@@ -26,8 +26,10 @@ kotlin {
     }
 }
 
+addGithubPackagesRepository()
+
 kmmbridge {
-    gitHubReleaseArtifacts()
+    mavenPublishArtifacts()
     spm(swiftToolVersion = "5.8") {
         iOS { v("14") }
     }
